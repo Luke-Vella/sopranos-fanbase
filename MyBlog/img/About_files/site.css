@@ -1,0 +1,218 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: black;
+    padding: 0;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-inverse {
+    background-color: black;
+    border-color: black;
+}
+
+
+@font-face {
+    font-family: "Mobsters";
+    src: url("../fonts/Mobsters.ttf");
+}
+
+.navbar-brand {
+    padding-left: 30px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFF;
+}
+
+    .navbar-inverse .navbar-brand:hover, .navbar-inverse {
+        color: white;
+    }
+
+        .navbar-inverse .navbar-brand:hover, .navbar-inverse {
+            color: silver;
+        }
+
+            .navbar-inverse .navbar-brand:active, .navbar-brand:active {
+                color: darkred;
+                background-color: transparent;
+            }
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .example {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .example {
+        font-size: 70px;
+    }
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+
+.carousel-caption {
+    top: 40%;
+    transform: translateY(40%);
+}
+
+.btn-default {
+    color: black;
+    background-color: white;
+    border-color: white;
+    border-radius: 2px;
+    outline: none;
+    font-size: 35px;
+}
+
+    .btn-default:hover {
+        color: black;
+        background-color: silver;
+        border-color: black;
+        border-radius: 2px;
+        outline: none;
+    }
+
+    .btn-default:active {
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    .btn-default:focus {
+        color: black;
+        outline: none;
+    }
+
+
+
+.carousel-indicators {
+    width: 5%;
+    top: 5%;
+    left: 77.5%;
+    position: absolute;
+    white-space: nowrap;
+    height: 50px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Mobsters;
+}
+
+h2 {
+    font-family: 'Mobsters';
+    font-size: 50px;
+    color: black;
+}
+
+.carousel-control.left {
+    background-color: black;
+}
+
+.carousel-control.right {
+    background-color: black;
+}
+
+#icon {
+    margin: 1% auto;
+}
+
+.container {
+    margin: 2% auto;
+}
+
+
+@media (max-width:1750px) {
+    .disappearingtext h1 {
+        font-size: 40px;
+    }
+
+    .disappearingtext .btn-default {
+        font-size: 25px;
+    }
+
+    .carouseltext {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width:1450px) {
+    .disappearingtext h1 {
+        font-size: 25px;
+    }
+
+    .disappearingtext .btn-default {
+        font-size: 15px;
+    }
+
+    .carouseltext {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1275px) {
+    .disappearingtext {
+        display: none;
+    }
+}
+
+@media (max-width:1000px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #icon {
+        max-width: 180px;
+    }
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.navbar-inverse .navbar-nav > .login > a {
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+    .navbar-inverse .navbar-nav > .login > a:hover {
+        background-color: white;
+        border: 1px solid white;
+        color:black;
+    }
+
+    .navbar-inverse .navbar-nav > .login > a:active{
+        background-color: grey;
+    }
+
