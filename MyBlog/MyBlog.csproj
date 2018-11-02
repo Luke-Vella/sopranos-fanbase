@@ -184,6 +184,7 @@
     </Compile>
     <Compile Include="Models\Member.cs" />
     <Compile Include="Models\MyBlogContext.cs" />
+    <Compile Include="Models\userLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -256,14 +257,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\PageWithInfiniteWaitingTime.cshtml" />
-    <Content Include="Views\Home\PageWith10sec.cshtml" />
-    <Content Include="Views\Home\StackOverFlowBugPage.cshtml" />
     <Content Include="Views\Members\Registration.cshtml" />
     <Content Include="Views\Members\Delete.cshtml" />
     <Content Include="Views\Members\Details.cshtml" />
     <Content Include="Views\Members\Edit.cshtml" />
     <Content Include="Views\Members\Index.cshtml" />
+    <Content Include="Views\Members\VerifyAccount.cshtml" />
+    <Content Include="Views\Members\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

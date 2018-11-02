@@ -20,5 +20,7 @@ namespace MyBlog.Models
         }
 
         public System.Data.Entity.DbSet<MyBlog.Models.Member> Members { get; set; }
+
+        public System.Data.Entity.DbSet<MyBlog.Models.userLogin> userLogins { get; set; }
     }
 }
