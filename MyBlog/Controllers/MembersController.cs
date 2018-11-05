@@ -164,8 +164,8 @@ namespace MyBlog.Controllers
             ViewBag.Status = Status;
                 return View();
         }
+        
 
-        [HttpGet]
         public ActionResult Login()
         {
             return View();
@@ -173,12 +173,13 @@ namespace MyBlog.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Login (userLogin login, string ReturnUrl = " ")
+        public ActionResult Login(userLogin login, string ReturnUrl = " ")
         {
             string message = "";
             using (db)
             {
                 var v = db.Members.Where(a => a.Email == login.EmailID).FirstOrDefault();
+                
                 if (v != null)
                 {
                     if (string.Compare(Crypto.Hash(login.Password),v.Password) == 0)

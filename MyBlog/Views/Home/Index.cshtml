@@ -68,6 +68,17 @@
 
         <div class="col-sm-4">
             <img src="~/img/Tributes/DavidChase.jpg" id="icon" />
+            @if (Request.IsAuthenticated)
+            {
+
+                <li class="login @(ViewContext.RouteData.Values["Action"].ToString() == "Login" ? "active" : "")" style="margin-left:50px">@Html.ActionLink("Logoout", "Logout", "Members")</li>
+
+
+            }
+            else
+            {
+                <p>Welcome, @HttpContext.Current.User.Identity.IsAuthenticated</p>
+            }
             <h2>About David Chase</h2>
             <p>David Chase (born August 22, 1945) is an American screenwriter, director, and television producer. He is best known for writing and producing the HBO drama The Sopranos which aired for six seasons between 1999 and 2007. Chase has also produced and written for such shows as The Rockford Files, I'll Fly Away, and Northern Exposure. He created the original series Almost Grown which aired for 10 episodes in 1988 and 1989. He has won seven Emmy Awards.</p>
         </div>

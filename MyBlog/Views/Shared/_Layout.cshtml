@@ -45,23 +45,11 @@
                     <li class=@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")>@Html.ActionLink("About", "About", "Home")</li>
                     <li class=@(ViewContext.RouteData.Values["Action"].ToString() == "Forum" ? "active" : "")><a href="#">Characters</a></li>
                     <li class=@(ViewContext.RouteData.Values["Action"].ToString() == "Testimonials" ? "active" : "")><a href="#">Testimonials</a></li>
-                    <li class="login @(ViewContext.RouteData.Values["Action"].ToString() == "Login" ? "active" : "")">@Html.ActionLink("Login", "Login", "Members")</li>
-
+                    @Html.Partial("_LoginPartial")
                 </ul>
-
+                
             </div>
-            <script>
-                $(document).ready(function () {
-                    $("item").bind("click", function (event) {
-                        event.preventDefault();
-                        var clickedItem = $(this);
-                        $("item").each(function () {
-                            $(this).removeClass("active");
-                        });
-                        clickedItem.addClass("active");
-                    });
-                });
-            </script>
+
 
 
         </div>

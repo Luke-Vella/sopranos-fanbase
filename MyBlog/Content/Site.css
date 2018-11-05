@@ -83,6 +83,11 @@ textarea {
     transform: translateY(40%);
 }
 
+
+a:hover {
+    background-color:white;     
+}
+
 .btn-default {
     color: black;
     background-color: white;
@@ -111,7 +116,35 @@ textarea {
         outline: none;
     }
 
+.btn-info {
+    color: #fff;
+    color: white;
+    background-color: black;
+    border-color: white;
+    border-radius: 2px;
+    outline: none;
+    font-size: 35px;
+    font-family: Mobsters;
+}
+    .btn-info:hover {
+        color: white;
+        background-color: transparent;
+        border: solid 1px grey;
+        border-color: white;
+        border-radius: 2px;
+        outline: none;
+    }
 
+
+
+    .btn-info:active, .btn-info.active{
+        color: white;
+        background-color: transparent;
+        border: solid 1px grey;
+        border-color: white;
+        border-radius: 2px;
+        outline: none;
+    }
 
 .carousel-indicators {
     width: 5%;
@@ -212,14 +245,14 @@ h2 {
 
 .navbar-inverse .navbar-nav > .login > a:hover {
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid grey;
     padding: 14px;
     border-radius: 50px;
     color: black;
 }
 
-.navbar-inverse .navbar-nav > .login > a:active {
-    background-color: grey;
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: transparent;
     border-color: grey;
 }
 
@@ -298,45 +331,9 @@ label {
     width: 80% /* value of your choice which suits your alignment */
 }
 
-.pulse {
-    margin: 100px;
-    display: block;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
-    animation: pulse 2s infinite;
-}
-
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
-    }
-
-    70% {
-        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-    }
-
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
-        box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
-    }
-
-    70% {
-        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-    }
-
-    100% {
-        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-    }
+.identity {
+    font-size: 20px;
+    padding: 10px 15px;
+    line-height: 20px;
+    color:grey;
 }

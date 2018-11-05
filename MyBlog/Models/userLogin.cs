@@ -9,7 +9,7 @@ namespace MyBlog.Models
     public class userLogin
     {
         [Key]
-        [Display(Name = "Id")]
+        [Display(Name = "EmailID")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Email ID required")]
         public string EmailID { get; set; }
 
@@ -17,7 +17,7 @@ namespace MyBlog.Models
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Display(Name = "Remember Me")]
+        [Display(Name = "RememberMe")]
         public bool RememberMe { get; set; }
 
     }

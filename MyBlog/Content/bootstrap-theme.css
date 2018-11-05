@@ -196,16 +196,8 @@ fieldset[disabled] .btn-success.active {
   background-repeat: repeat-x;
   border-color: #28a4c9;
 }
-.btn-info:hover,
-.btn-info:focus {
-  background-color: #2aabd2;
-  background-position: 0 -15px;
-}
 .btn-info:active,
-.btn-info.active {
-  background-color: #2aabd2;
-  border-color: #28a4c9;
-}
+
 .btn-info.disabled,
 .btn-info[disabled],
 fieldset[disabled] .btn-info,
@@ -471,7 +463,7 @@ fieldset[disabled] .btn-danger.active {
   background-repeat: repeat-x;
 }
 .progress-bar-info {
-  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
+  background-image: -webkit-linear-gradient(top, #5bc0de 0%, transparent 100%);
   background-image:      -o-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#31b0d5));
   background-image:         linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);

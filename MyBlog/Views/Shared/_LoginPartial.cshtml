@@ -1,0 +1,9 @@
+﻿    @if (Request.IsAuthenticated)
+    {
+       
+        <li class="login @(ViewContext.RouteData.Values["Action"].ToString() == "Login" ? "active" : "")">@Html.ActionLink("Logout", "Logout", "Members")</li>
+    }
+    else
+    {
+        <li class="login @(ViewContext.RouteData.Values["Action"].ToString() == "Login" ? "active" : "")">@Html.ActionLink("Login", "Login", "Members")</li>
+    }
