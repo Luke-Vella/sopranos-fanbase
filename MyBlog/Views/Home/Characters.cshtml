@@ -1,0 +1,64 @@
+﻿
+<body>
+    <div class="container" style=background-color:transparent; width:50%; padding-top:5px; border:solid 1px white">
+
+        <div class="row text-center" style="background-color:white">
+            <div class="col-md-12">
+                <h1 style="color:black">Major Characters</h1>
+            </div>
+
+        </div>
+
+
+        <div class="row text-center" style="margin: 30px;">
+            <div class="col-md-6 ">
+                <div class="hover13">
+                        <img src="~/img/char/1.jpg" class="characters" />
+                </div>
+                <div class="caption"> <p class="WhiteSubtitles">Anthony Soprano</p></div>
+
+            </div>
+            <div class="col-md-6">
+                <img src="~/img/char/2.jpg" class="characters" />
+                <div class="caption"> <p class="WhiteSubtitles">Christopher Moltisanti</p></div>
+
+            </div>
+        </div>
+
+        <div class="row text-center" style="margin: 30px;">
+            <div class="col-md-6">
+                <img src="~/img/char/3.jpg" class="characters" />
+                <div class="caption"> <p class="WhiteSubtitles">Silvio Dante</p></div>
+
+            </div>
+            <div class="col-md-6">
+                <img src="~/img/char/4.jpg" class="characters" />
+                <div class="caption"> <p class="WhiteSubtitles">Junior Soprano</p></div>
+            </div>
+        </div>
+
+        <div class="row text-center" style="margin: 30px;">
+            <div class="col-md-6">
+                <img src="~/img/char/5.jpg" class="characters" />
+                <div class="caption"> <p class="WhiteSubtitles">Paulie Gualtier</p></div>
+
+            </div>
+            <div class="col-md-6">
+                <img src="~/img/char/6.jpg" class="characters" />
+                <div class="caption"> <p class="WhiteSubtitles">Bobby Bacala</p></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+
+    var images = ['/img/char/1.jpeg', '/img/char/2.jpeg', '/img/char/3.jpeg', '/img/char/4.jpeg', '/img/char/5.jpeg', '/img/char/6.jpeg',];
+
+    function buildImages() {
+        for (var i = 0; i < images.length; i++) {
+            document.createElement(images[i]);
+        }
+    }
+
+</script>

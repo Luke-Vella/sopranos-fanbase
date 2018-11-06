@@ -13,7 +13,6 @@ namespace MyBlog.Controllers
         
         public ActionResult Index()
         {
-            var v = typeof(Controller).Assembly.GetName().Version;
             TC.TrackEvent("Navigating to Index Section ");
             return View();
         }
@@ -28,6 +27,13 @@ namespace MyBlog.Controllers
         public ActionResult Contact()
         {
             TC.TrackEvent("Navigating To Contact Section");
+            return View();
+        }
+
+        
+        public ActionResult Characters()
+        {
+            TC.TrackEvent("Navigating To Characters Section");
             return View();
         }
 

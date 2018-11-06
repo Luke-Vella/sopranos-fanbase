@@ -43,8 +43,8 @@
 
                     <li class=@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li class=@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")>@Html.ActionLink("About", "About", "Home")</li>
-                    <li class=@(ViewContext.RouteData.Values["Action"].ToString() == "Forum" ? "active" : "")><a href="#">Characters</a></li>
-                    <li class=@(ViewContext.RouteData.Values["Action"].ToString() == "Testimonials" ? "active" : "")><a href="#">Testimonials</a></li>
+                    <li class=@(ViewContext.RouteData.Values["Action"].ToString() == "Forum" ? "active" : "")>@Html.ActionLink("Forum", "Index", "Forum")</li>
+                    <li class=@(ViewContext.RouteData.Values["Action"].ToString() == "Characters" ? "active" : "")>@Html.ActionLink("Characters", "Characters", "Home")</li>
                     @Html.Partial("_LoginPartial")
                 </ul>
                 

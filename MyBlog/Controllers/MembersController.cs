@@ -221,7 +221,7 @@ namespace MyBlog.Controllers
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Login", "Members");
+            return RedirectToAction("Index", "Home");
         }
     }   
 

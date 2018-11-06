@@ -83,11 +83,6 @@ textarea {
     transform: translateY(40%);
 }
 
-
-a:hover {
-    background-color:white;     
-}
-
 .btn-default {
     color: black;
     background-color: white;
@@ -126,6 +121,7 @@ a:hover {
     font-size: 35px;
     font-family: Mobsters;
 }
+
     .btn-info:hover {
         color: white;
         background-color: transparent;
@@ -135,15 +131,18 @@ a:hover {
         outline: none;
     }
 
-
-
-    .btn-info:active, .btn-info.active{
-        color: white;
-        background-color: transparent;
-        border: solid 1px grey;
+    .btn-info:active {
+        color: black;
+        background-color: green;
         border-color: white;
         border-radius: 2px;
         outline: none;
+        font-size: 35px;
+    }
+
+    .btn-info:focus {
+        background-color: black;
+        border-color: white;
     }
 
 .carousel-indicators {
@@ -158,6 +157,7 @@ a:hover {
 h1 {
     font-size: 60px;
     font-family: Mobsters;
+    color: white;
 }
 
 h2 {
@@ -270,6 +270,12 @@ h2 {
     border-bottom: 1px solid grey;
 }
 
+@media (max-width: 860px) {
+    .navbar-nav {
+        display: inline;
+    }
+}
+
 
 .mylink {
     color: white;
@@ -303,9 +309,8 @@ h2 {
 
 @media (max-width: 1400px) {
     body {
-        padding-top:10%;
+        padding-top: 10%;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -335,5 +340,68 @@ label {
     font-size: 20px;
     padding: 10px 15px;
     line-height: 20px;
-    color:grey;
+    color: grey;
+}
+
+.characters {
+    border: solid 1px white;
+    border-radius: 140px;
+    width: 200px;
+    height: 200px;
+    vertical-align: central;
+}
+
+.WhiteSubtitles {
+    font-family: Mobsters;
+    font-size: 40px;
+    color: white;
+    padding: 5px;
+}
+
+.hover13 .characters:hover img {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.underconstruction {
+    width: 600px;
+    height: 300px;
+}
+
+@media (max-width:720px) {
+    .underconstruction {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+.dropdownlink {
+    color: #9d9d9d;
+    padding-bottom: 15px;
+    line-height: 20px;
+    padding: 10px 15px;
+    font-family: 'Mobsters';
+    font-size: 27px;
 }
